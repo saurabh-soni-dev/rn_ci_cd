@@ -1,0 +1,578 @@
+20:49:01.961 detox[62422] [90mB[39m [33mlifecycle[39m node_modules/detox/local-cli/cli.js test --configuration android.genymotion.release -l verbose --maxWorkers 2 --record-logs all --take-screenshots all
+  data: {
+    "id": "775aed47-5d18-944e-cc0f-79015124b44c",
+    "detoxConfig": {
+      "configurationName": "android.genymotion.release",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+          "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release"
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.genymotion.release.2025-11-05 15-19-01Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "takeScreenshots": "all",
+        "configuration": "android.genymotion.release",
+        "loglevel": "verbose",
+        "start": true
+      },
+      "commands": [
+        {
+          "appName": "default",
+          "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release"
+        }
+      ],
+      "device": {
+        "type": "android.genycloud",
+        "device": {
+          "recipeUUID": "a521e033-0fa6-4579-9b2c-8f877ea50af2"
+        }
+      },
+      "logger": {
+        "level": "debug",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "detached": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 120000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "jest",
+          "_": [],
+          "config": "e2e/jest.config.js",
+          "maxWorkers": 2,
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-62422",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+20:49:01.966 detox[62422] [90mi[39m [33mipc[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-62422
+20:49:01.967 detox[62422] [90mi[39m [33mipc[39m starting server on  /tmp/detox.primary-62422 
+20:49:01.967 detox[62422] [90mi[39m [33mipc[39m starting TLS server false
+20:49:01.967 detox[62422] [90mi[39m [33mipc[39m starting server as Unix || Windows Socket
+20:49:01.969 detox[62422] [90mi[39m [33mws-server[39m Detox server listening on localhost:61247...
+20:49:01.972 detox[62422] [90mi[39m [33mlifecycle[39m Serialized the session state at: /private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/775aed47-5d18-944e-cc0f-79015124b44c.detox.json
+20:49:01.975 detox[62422] [90mB[39m [33mlifecycle[39m jest --config e2e/jest.config.js --maxWorkers 2
+20:49:01.977 detox[62422] [90mi[39m [33muser[39m (node:62422) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+  origin: at node:internal/process/warning:56:3
+20:49:02.849 detox[62425] [90mi[39m [33mipc[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+20:49:02.850 detox[62425] [90mi[39m [33mipc[39m requested connection to  primary-62422 /tmp/detox.primary-62422
+20:49:02.850 detox[62425] [90mi[39m [33mipc[39m Connecting client on Unix Socket : /tmp/detox.primary-62422
+20:49:02.851 detox[62422] [90mi[39m [33mipc[39m ## socket connection to server detected ##
+20:49:02.851 detox[62422] [90mi[39m [33mipc[39m received event of :  registerContext { id: 'secondary-62425' }
+20:49:02.851 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+20:49:02.851 detox[62425] [90mi[39m [33mipc[39m retrying reset
+20:49:02.851 detox[62425] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerContext , { id: 'secondary-62425' }
+20:49:02.852 detox[62425] [90mi[39m [33mipc[39m ## received events ##
+20:49:02.852 detox[62425] [90mi[39m [33mipc[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+20:49:03.080 detox[62434] [90mB[39m [33mlifecycle[39m e2e/OnboardingProcess.test.js
+20:49:03.080 detox[62435] [90mB[39m [33mlifecycle[39m e2e/RegisterProcess.test.js
+20:49:03.096 detox[62435] [90mB[39m [33mlifecycle[39m set up environment
+20:49:03.101 detox[62434] [90mB[39m [33mlifecycle[39m set up environment
+20:49:03.102 detox[62435] [90mi[39m [33mipc[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+20:49:03.102 detox[62435] [90mi[39m [33mipc[39m requested connection to  primary-62422 /tmp/detox.primary-62422
+20:49:03.102 detox[62435] [90mi[39m [33mipc[39m Connecting client on Unix Socket : /tmp/detox.primary-62422
+20:49:03.103 detox[62422] [90mi[39m [33mipc[39m ## socket connection to server detected ##
+20:49:03.103 detox[62435] [90mi[39m [33mipc[39m retrying reset
+20:49:03.104 detox[62422] [90mi[39m [33mipc[39m received event of :  registerContext { id: 'secondary-62435' }
+20:49:03.104 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+20:49:03.104 detox[62422] [90mi[39m [33mipc[39m ## socket connection to server detected ##
+20:49:03.104 detox[62434] [90mi[39m [33mipc[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+20:49:03.104 detox[62434] [90mi[39m [33mipc[39m requested connection to  primary-62422 /tmp/detox.primary-62422
+20:49:03.104 detox[62434] [90mi[39m [33mipc[39m Connecting client on Unix Socket : /tmp/detox.primary-62422
+20:49:03.104 detox[62435] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerContext , { id: 'secondary-62435' }
+20:49:03.105 detox[62422] [90mi[39m [33mipc[39m received event of :  registerContext { id: 'secondary-62434' }
+20:49:03.105 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+20:49:03.105 detox[62434] [90mi[39m [33mipc[39m retrying reset
+20:49:03.105 detox[62434] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerContext , { id: 'secondary-62434' }
+20:49:03.105 detox[62435] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.105 detox[62435] [90mi[39m [33mipc[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+20:49:03.105 detox[62435] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerWorker , { workerId: 'w2' }
+20:49:03.106 detox[62422] [90mi[39m [33mipc[39m received event of :  registerWorker { workerId: 'w2' }
+20:49:03.106 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+20:49:03.106 detox[62422] [90mi[39m [33mipc[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-62422  :   sessionStateUpdate { workersCount: 1 }
+20:49:03.106 detox[62422] [90mi[39m [33mipc[39m received event of :  registerWorker { workerId: 'w1' }
+20:49:03.106 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerWorkerDone { workersCount: 2 }
+20:49:03.106 detox[62425] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.106 detox[62425] [90mi[39m [33mipc[39m detected event sessionStateUpdate { workersCount: 1 }
+20:49:03.106 detox[62434] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.106 detox[62434] [90mi[39m [33mipc[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+20:49:03.106 detox[62434] [90mi[39m [33mipc[39m detected event sessionStateUpdate { workersCount: 1 }
+20:49:03.106 detox[62434] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerWorker , { workerId: 'w1' }
+20:49:03.106 detox[62435] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.106 detox[62435] [90mi[39m [33mipc[39m detected event registerWorkerDone { workersCount: 1 }
+20:49:03.107 detox[62422] [90mi[39m [33mipc[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-62422  :   sessionStateUpdate { workersCount: 2 }
+20:49:03.107 detox[62425] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.107 detox[62425] [90mi[39m [33mipc[39m detected event sessionStateUpdate { workersCount: 2 }
+20:49:03.107 detox[62434] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.107 detox[62434] [90mi[39m [33mipc[39m detected event registerWorkerDone { workersCount: 2 }
+20:49:03.229 detox[62434] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.229 detox[62434] [90mi[39m [33mipc[39m detected event sessionStateUpdate { workersCount: 2 }
+20:49:03.229 detox[62435] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.229 detox[62435] [90mi[39m [33mipc[39m detected event sessionStateUpdate { workersCount: 1 }
+20:49:03.229 detox[62435] [90mi[39m [33mipc[39m detected event sessionStateUpdate { workersCount: 2 }
+20:49:03.235 detox[62422] [90mB[39m [33mws-server[39m connection :61247<->:61250
+20:49:03.236 detox[62422] [90mB[39m [33mws-server[39m connection :61247<->:61251
+20:49:03.236 detox[62435] [90mi[39m [33mws-client[39m opened web socket to: ws://localhost:61247
+20:49:03.237 detox[62434] [90mi[39m [33mws-client[39m opened web socket to: ws://localhost:61247
+20:49:03.237 detox[62435] [90mi[39m [33mws-client[39m send message
+  data: {"type":"login","params":{"sessionId":"d27a0237-e8b3-4578-5472-90006861ccc2","role":"tester"},"messageId":0}
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m get
+  data: {"type":"login","params":{"sessionId":"d27a0237-e8b3-4578-5472-90006861ccc2","role":"tester"},"messageId":0}
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m created session d27a0237-e8b3-4578-5472-90006861ccc2
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m tester joined session d27a0237-e8b3-4578-5472-90006861ccc2
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m get
+  data: {"type":"login","params":{"sessionId":"e67eb570-7e73-cc17-36d8-fcf4c1125e32","role":"tester"},"messageId":0}
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m created session e67eb570-7e73-cc17-36d8-fcf4c1125e32
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+20:49:03.238 detox[62422] [90mi[39m [33mws-server[39m tester joined session e67eb570-7e73-cc17-36d8-fcf4c1125e32
+20:49:03.238 detox[62434] [90mi[39m [33mws-client[39m send message
+  data: {"type":"login","params":{"sessionId":"e67eb570-7e73-cc17-36d8-fcf4c1125e32","role":"tester"},"messageId":0}
+20:49:03.239 detox[62434] [90mi[39m [33mws-client[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+20:49:03.239 detox[62435] [90mi[39m [33mws-client[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+20:49:03.281 detox[62434] [90mE[39m [33mlifecycle[39m set up environment
+  error: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!
+  PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools
+20:49:03.281 detox[62434] [90mB[39m [33mlifecycle[39m tear down environment
+20:49:03.281 detox[62435] [90mE[39m [33mlifecycle[39m set up environment
+  error: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!
+  PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools
+20:49:03.281 detox[62435] [90mB[39m [33mlifecycle[39m tear down environment
+20:49:03.283 detox[62422] [90mi[39m [33mws-server[39m tester exited session e67eb570-7e73-cc17-36d8-fcf4c1125e32
+20:49:03.283 detox[62422] [90mE[39m [33mws-server[39m connection :61247<->:61251
+20:49:03.283 detox[62434] [90mi[39m [33mipc[39m connection closed primary-62422 /tmp/detox.primary-62422 0 tries remaining of 0
+20:49:03.283 detox[62434] [90mi[39m [33mipc[39m secondary-62434 exceeded connection rety amount of  or stopRetrying flag set.
+20:49:03.283 detox[62434] [90mE[39m [33mlifecycle[39m tear down environment
+20:49:03.283 detox[62435] [90mi[39m [33mipc[39m connection closed primary-62422 /tmp/detox.primary-62422 0 tries remaining of 0
+20:49:03.284 detox[62422] [90mi[39m [33mipc[39m socket disconnected secondary-62435
+20:49:03.284 detox[62422] [90mi[39m [33mipc[39m socket disconnected secondary-62434
+20:49:03.284 detox[62422] [90mi[39m [33mws-server[39m tester exited session d27a0237-e8b3-4578-5472-90006861ccc2
+20:49:03.284 detox[62422] [90mE[39m [33mws-server[39m connection :61247<->:61250
+20:49:03.284 detox[62434] [90mE[39m [33mlifecycle[39m e2e/OnboardingProcess.test.js
+20:49:03.284 detox[62435] [90mi[39m [33mipc[39m secondary-62435 exceeded connection rety amount of  or stopRetrying flag set.
+20:49:03.284 detox[62435] [90mE[39m [33mlifecycle[39m tear down environment
+20:49:03.284 detox[62435] [90mE[39m [33mlifecycle[39m e2e/RegisterProcess.test.js
+20:49:03.306 detox[62434] [90mB[39m [33mlifecycle[39m e2e/LoginProcess.test.js
+20:49:03.306 detox[62435] [90mB[39m [33mlifecycle[39m e2e/AppLaunch.test.js
+20:49:03.308 detox[62434] [90mB[39m [33mlifecycle[39m set up environment
+20:49:03.308 detox[62434] [90mi[39m [33mipc[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+20:49:03.308 detox[62434] [90mi[39m [33mipc[39m requested connection to  primary-62422 /tmp/detox.primary-62422
+20:49:03.308 detox[62434] [90mi[39m [33mipc[39m Connecting client on Unix Socket : /tmp/detox.primary-62422
+20:49:03.309 detox[62422] [90mi[39m [33mipc[39m ## socket connection to server detected ##
+20:49:03.309 detox[62435] [90mB[39m [33mlifecycle[39m set up environment
+20:49:03.311 detox[62435] [90mi[39m [33mipc[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+20:49:03.311 detox[62435] [90mi[39m [33mipc[39m requested connection to  primary-62422 /tmp/detox.primary-62422
+20:49:03.311 detox[62435] [90mi[39m [33mipc[39m Connecting client on Unix Socket : /tmp/detox.primary-62422
+20:49:03.314 detox[62422] [90mi[39m [33mipc[39m ## socket connection to server detected ##
+20:49:03.315 detox[62422] [90mi[39m [33mipc[39m received event of :  registerContext { id: 'secondary-62434' }
+20:49:03.315 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+20:49:03.315 detox[62434] [90mi[39m [33mipc[39m retrying reset
+20:49:03.315 detox[62434] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerContext , { id: 'secondary-62434' }
+20:49:03.315 detox[62434] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.315 detox[62434] [90mi[39m [33mipc[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+20:49:03.316 detox[62422] [90mi[39m [33mipc[39m received event of :  registerWorker { workerId: 'w1' }
+20:49:03.316 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerWorkerDone { workersCount: 2 }
+20:49:03.316 detox[62422] [90mi[39m [33mipc[39m received event of :  registerContext { id: 'secondary-62435' }
+20:49:03.316 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+20:49:03.316 detox[62434] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerWorker , { workerId: 'w1' }
+20:49:03.316 detox[62434] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.316 detox[62434] [90mi[39m [33mipc[39m detected event registerWorkerDone { workersCount: 2 }
+20:49:03.316 detox[62435] [90mi[39m [33mipc[39m retrying reset
+20:49:03.316 detox[62435] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerContext , { id: 'secondary-62435' }
+20:49:03.317 detox[62422] [90mi[39m [33mipc[39m received event of :  registerWorker { workerId: 'w2' }
+20:49:03.317 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  registerWorkerDone { workersCount: 2 }
+20:49:03.317 detox[62435] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.317 detox[62435] [90mi[39m [33mipc[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+20:49:03.317 detox[62435] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  registerWorker , { workerId: 'w2' }
+20:49:03.318 detox[62422] [90mB[39m [33mws-server[39m connection :61247<->:61252
+20:49:03.318 detox[62435] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.318 detox[62435] [90mi[39m [33mipc[39m detected event registerWorkerDone { workersCount: 2 }
+20:49:03.319 detox[62422] [90mi[39m [33mws-server[39m get
+  data: {"type":"login","params":{"sessionId":"e67eb570-7e73-cc17-36d8-fcf4c1125e32","role":"tester"},"messageId":0}
+20:49:03.319 detox[62422] [90mi[39m [33mws-server[39m created session e67eb570-7e73-cc17-36d8-fcf4c1125e32
+20:49:03.319 detox[62422] [90mi[39m [33mws-server[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+20:49:03.319 detox[62422] [90mi[39m [33mws-server[39m tester joined session e67eb570-7e73-cc17-36d8-fcf4c1125e32
+20:49:03.319 detox[62434] [90mi[39m [33mws-client[39m opened web socket to: ws://localhost:61247
+20:49:03.319 detox[62434] [90mi[39m [33mws-client[39m send message
+  data: {"type":"login","params":{"sessionId":"e67eb570-7e73-cc17-36d8-fcf4c1125e32","role":"tester"},"messageId":0}
+20:49:03.319 detox[62434] [90mi[39m [33mws-client[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+20:49:03.320 detox[62422] [90mB[39m [33mws-server[39m connection :61247<->:61253
+20:49:03.320 detox[62422] [90mi[39m [33mws-server[39m get
+  data: {"type":"login","params":{"sessionId":"d27a0237-e8b3-4578-5472-90006861ccc2","role":"tester"},"messageId":0}
+20:49:03.320 detox[62422] [90mi[39m [33mws-server[39m created session d27a0237-e8b3-4578-5472-90006861ccc2
+20:49:03.320 detox[62422] [90mi[39m [33mws-server[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+20:49:03.320 detox[62422] [90mi[39m [33mws-server[39m tester joined session d27a0237-e8b3-4578-5472-90006861ccc2
+20:49:03.320 detox[62434] [90mE[39m [33mlifecycle[39m set up environment
+  error: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!
+  PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools
+20:49:03.320 detox[62434] [90mB[39m [33mlifecycle[39m tear down environment
+20:49:03.320 detox[62435] [90mi[39m [33mws-client[39m opened web socket to: ws://localhost:61247
+20:49:03.320 detox[62435] [90mi[39m [33mws-client[39m send message
+  data: {"type":"login","params":{"sessionId":"d27a0237-e8b3-4578-5472-90006861ccc2","role":"tester"},"messageId":0}
+20:49:03.320 detox[62435] [90mi[39m [33mws-client[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+20:49:03.321 detox[62422] [90mi[39m [33mws-server[39m tester exited session e67eb570-7e73-cc17-36d8-fcf4c1125e32
+20:49:03.321 detox[62422] [90mE[39m [33mws-server[39m connection :61247<->:61252
+20:49:03.321 detox[62422] [90mi[39m [33mipc[39m socket disconnected secondary-62434
+20:49:03.321 detox[62434] [90mi[39m [33mipc[39m connection closed primary-62422 /tmp/detox.primary-62422 0 tries remaining of 0
+20:49:03.321 detox[62434] [90mi[39m [33mipc[39m secondary-62434 exceeded connection rety amount of  or stopRetrying flag set.
+20:49:03.321 detox[62434] [90mE[39m [33mlifecycle[39m tear down environment
+20:49:03.321 detox[62434] [90mE[39m [33mlifecycle[39m e2e/LoginProcess.test.js
+20:49:03.321 detox[62435] [90mE[39m [33mlifecycle[39m set up environment
+  error: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!
+  PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools
+20:49:03.321 detox[62435] [90mB[39m [33mlifecycle[39m tear down environment
+20:49:03.322 detox[62422] [90mi[39m [33mws-server[39m tester exited session d27a0237-e8b3-4578-5472-90006861ccc2
+20:49:03.322 detox[62422] [90mE[39m [33mws-server[39m connection :61247<->:61253
+20:49:03.322 detox[62422] [90mi[39m [33mipc[39m socket disconnected secondary-62435
+20:49:03.322 detox[62435] [90mi[39m [33mipc[39m connection closed primary-62422 /tmp/detox.primary-62422 0 tries remaining of 0
+20:49:03.322 detox[62435] [90mi[39m [33mipc[39m secondary-62435 exceeded connection rety amount of  or stopRetrying flag set.
+20:49:03.322 detox[62435] [90mE[39m [33mlifecycle[39m tear down environment
+20:49:03.322 detox[62435] [90mE[39m [33mlifecycle[39m e2e/AppLaunch.test.js
+20:49:03.334 detox[62425] [90mi[39m [33mipc[39m dispatching event to  primary-62422 /tmp/detox.primary-62422  :  reportTestResults , {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/OnboardingProcess.test.js',
+      testExecError: [String: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'] {
+        type: 'Error',
+        stack: "DetoxRuntimeError: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools\n' +
+          '    at throwMissingGmsaasError (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:172:9)\n' +
+          '    at Object.getGmsaasPath (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:137:29)\n' +
+          '    at GenycloudServiceLocator.get exec [as exec] (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/servicelocator/android/genycloudServiceLocator.js:11:41)\n' +
+          '    at Genycloud.createValidator (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/validation/factories/index.js:8:43)\n' +
+          '    at DetoxWorker.init (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/DetoxWorker.js:131:46)\n' +
+          '    at init.next (<anonymous>)\n' +
+          '    at getNextResult (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/caf/src/caf.js:253:25)\n' +
+          '    at processTicksAndRejections (node:internal/process/task_queues:105:5)',
+        message: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'
+      },
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/RegisterProcess.test.js',
+      testExecError: [String: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'] {
+        type: 'Error',
+        stack: "DetoxRuntimeError: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools\n' +
+          '    at throwMissingGmsaasError (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:172:9)\n' +
+          '    at Object.getGmsaasPath (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:137:29)\n' +
+          '    at GenycloudServiceLocator.get exec [as exec] (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/servicelocator/android/genycloudServiceLocator.js:11:41)\n' +
+          '    at Genycloud.createValidator (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/validation/factories/index.js:8:43)\n' +
+          '    at DetoxWorker.init (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/DetoxWorker.js:131:46)\n' +
+          '    at init.next (<anonymous>)\n' +
+          '    at getNextResult (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/caf/src/caf.js:253:25)\n' +
+          '    at processTicksAndRejections (node:internal/process/task_queues:105:5)',
+        message: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'
+      },
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/LoginProcess.test.js',
+      testExecError: [String: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'] {
+        type: 'Error',
+        stack: "DetoxRuntimeError: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools\n' +
+          '    at throwMissingGmsaasError (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:172:9)\n' +
+          '    at Object.getGmsaasPath (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:137:29)\n' +
+          '    at GenycloudServiceLocator.get exec [as exec] (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/servicelocator/android/genycloudServiceLocator.js:11:41)\n' +
+          '    at Genycloud.createValidator (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/validation/factories/index.js:8:43)\n' +
+          '    at DetoxWorker.init (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/DetoxWorker.js:131:46)\n' +
+          '    at init.next (<anonymous>)\n' +
+          '    at getNextResult (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/caf/src/caf.js:253:25)\n' +
+          '    at processTicksAndRejections (node:internal/process/task_queues:105:5)',
+        message: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'
+      },
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/AppLaunch.test.js',
+      testExecError: [String: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'] {
+        type: 'Error',
+        stack: "DetoxRuntimeError: Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools\n' +
+          '    at throwMissingGmsaasError (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:172:9)\n' +
+          '    at Object.getGmsaasPath (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/utils/environment.js:137:29)\n' +
+          '    at GenycloudServiceLocator.get exec [as exec] (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/servicelocator/android/genycloudServiceLocator.js:11:41)\n' +
+          '    at Genycloud.createValidator (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/devices/validation/factories/index.js:8:43)\n' +
+          '    at DetoxWorker.init (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/src/DetoxWorker.js:131:46)\n' +
+          '    at init.next (<anonymous>)\n' +
+          '    at getNextResult (/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/caf/src/caf.js:253:25)\n' +
+          '    at processTicksAndRejections (node:internal/process/task_queues:105:5)',
+        message: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+          'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools'
+      },
+      isPermanentFailure: false
+    }
+  ]
+}
+20:49:03.335 detox[62422] [90mi[39m [33mipc[39m received event of :  reportTestResults {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/OnboardingProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/RegisterProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/LoginProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/AppLaunch.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    }
+  ]
+}
+20:49:03.335 detox[62422] [90mi[39m [33mipc[39m dispatching event to socket  :  reportTestResultsDone {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/OnboardingProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/RegisterProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/LoginProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/AppLaunch.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    }
+  ]
+}
+20:49:03.335 detox[62422] [90mi[39m [33mipc[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-62422  :   sessionStateUpdate {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/OnboardingProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/RegisterProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/LoginProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/AppLaunch.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    }
+  ]
+}
+20:49:03.335 detox[62425] [90mi[39m [33mipc[39m ## received events ##
+20:49:03.335 detox[62425] [90mi[39m [33mipc[39m detected event reportTestResultsDone {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/OnboardingProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/RegisterProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/LoginProcess.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    },
+    {
+      success: false,
+      testFilePath: '/Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/e2e/AppLaunch.test.js',
+      testExecError: "Failed to locate Genymotion's gmsaas executable. Please add it to your $PATH variable!\n" +
+        'PATH is currently set to: /Users/saurabhsoni/Documents/ReactNative/rn_ci_cd/node_modules/detox/local-cli:/private/var/folders/l2/95jjqpbj11q048t40_k1433r0000gn/T/xfs-0843ea59:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools:/Users/saurabhsoni/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/saurabhsoni/Library/Android/sdk/emulator:/Users/saurabhsoni/Library/Android/sdk/platform-tools',
+      isPermanentFailure: false
+    }
+  ]
+}
+20:49:03.336 detox[62422] [90mi[39m [33mipc[39m socket disconnected secondary-62425
+20:49:03.336 detox[62425] [90mi[39m [33mipc[39m connection closed primary-62422 /tmp/detox.primary-62422 0 tries remaining of 0
+20:49:03.336 detox[62425] [90mi[39m [33mipc[39m secondary-62425 exceeded connection rety amount of  or stopRetrying flag set.
+20:49:03.390 detox[62422] [90mE[39m [33mlifecycle[39m Command failed with exit code = 1:
+jest --config e2e/jest.config.js --maxWorkers 2
+20:49:03.391 detox[62422] [90mi[39m [33mws-server[39m Detox server has been closed gracefully
+20:49:03.392 detox[62422] [90mE[39m [33mlifecycle[39m node_modules/detox/local-cli/cli.js test --configuration android.genymotion.release -l verbose --maxWorkers 2 --record-logs all --take-screenshots all
