@@ -33,6 +33,8 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+echo "android/playstore-credentials.json" 
+
 
 # node.js
 #
